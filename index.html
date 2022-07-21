@@ -14,10 +14,10 @@
       <header class="d-flex flex-row justify-content-center bg-primary text-light height: 100px">
               <h1>Apex Weather Dashboard</h1>
       </header>
-      <div class="container row" id="main-container">
-          <div class="container-fluid row col-4" id="weather-search">
-            <div class="form-group col-12">
-                <label for="i class="fa fa-search" aria-hidden="true"></i>Search a City</label>
+      <div class="container-fluid row" id="main-container">
+          <div class="container-fluid row col-3" id="search-side">
+            <div class="form-group col-12" id="search-bar">
+                <label for="i" class="fa fa-search" aria-hidden="true"></i>Search a City</label>
                 <input type="text" name="search" id="citySearch" class="form-control" placeholder="Enter a city here..." aria-describedby="helpId">
                 <button class="btn btn-primary">Search</button>
             </div>
@@ -27,16 +27,67 @@
                 </ul>
             </div>
           </div>
-          <div class="container-fluid row col-8">
-            <div class="container-fluid border col-12">
-                <ul class="weather-data">
+          <div class="container-fluid row col-9" id="weather-side">
+            <div class="container-fluid col-12 vh-100">
+              <div class="container-fluid border" id="city-data">
+                <h3 id="citytext">Salt Lake City</h3>
+                <span id="temp">Temp: </span>
+                <br>
+                <br>
+                <span id="wind">Wind: </span>
+                <br>
+                <br>
+                <span id="humidity">Humidity: </span>
+                <br>
+                <br>
+                <span id="uv">UV Index: </span>
+              </div>
+                <!-- <ul class="weather-list border">
                     <li class="list-unstyled" id="city-name">Salt lake City</li>
                     <li class="list-unstyled" id="Temp">Salt lake City</li>
                     <li class="list-unstyled" id="Wind">Salt lake City</li>
                     <li class="list-unstyled" id="Humidity">Salt lake City</li>
                     <li class="list-unstyled" id="UV Index">Salt lake City</li>
-                </ul>
-                <div class=""></div>
+                </ul> -->
+                <h4 id="fiveday-header">5 Day Forecast</h2>
+                <div class="row col-12 border justify-content-between" id="forecast-div">
+                  <!-- <h2>5 Day Forecast</h2> -->
+                  <!-- <div class="card text-left">
+                    <img class="card-img-top" src="holder.js/100px180/" alt="">
+                    <div class="card-body">
+                      <h4 class="card-title">Title</h4>
+                      <p class="card-text">Body</p>
+                    </div>
+                  </div>
+                  <div class="card text-left">
+                    <img class="card-img-top" src="holder.js/100px180/" alt="">
+                    <div class="card-body">
+                      <h4 class="card-title">Title</h4>
+                      <p class="card-text">Body</p>
+                    </div>
+                  </div>
+                  <div class="card text-left">
+                    <img class="card-img-top" src="holder.js/100px180/" alt="">
+                    <div class="card-body">
+                      <h4 class="card-title">Title</h4>
+                      <p class="card-text">Body</p>
+                    </div>
+                  </div>
+                  <div class="card text-left">
+                    <img class="card-img-top" src="holder.js/100px180/" alt="">
+                    <div class="card-body">
+                      <h4 class="card-title">Title</h4>
+                      <p class="card-text">Body</p>
+                    </div>
+                  </div>
+                  <div class="card text-left">
+                    <img class="card-img-top" src="holder.js/100px180/" alt="">
+                    <div class="card-body">
+                      <h4 class="card-title">Title</h4>
+                      <p class="card-text">Body</p>
+                    </div>
+                  </div>  -->
+                </div>
             </div> 
           </div>
       </div>

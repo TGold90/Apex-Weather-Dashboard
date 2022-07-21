@@ -12,19 +12,32 @@ header {
 }
 
 .row {
-    /* margin: 0px; */
+    margin: 0px;
+}
+
+.container-fluid {
+    padding: 0px;
 }
 
 #main-container {
     width: 100%;
-    margin: 0px;
-    padding: 0px;
-}
-
-#weather-search {
     margin: 10px;
+    padding: 10px;
 }
 
-.button-list{
-    height: 100%;
+#weather-side {
+    padding-right: 2em;
+    
+}
+
+#forecast-div {
+    height: 30vh;
+}
+
+#city-data {
+    height: 33vh;
+}
+
+#fiveday-header {
+    margin-top: 1em;
 }
