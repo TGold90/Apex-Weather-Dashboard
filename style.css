@@ -24,6 +24,9 @@ header {
     margin: 10px;
     padding: 10px;
 }
+#search-side {
+    /* text-align: center; */
+}
 
 #weather-side {
     padding-right: 2em;
@@ -40,4 +43,22 @@ header {
 
 #fiveday-header {
     margin-top: 1em;
+}
+
+#search-form {
+    height: 20vh;
+}
+
+#citysearch {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.btn {
+    margin-top: .5em;
+    width: 100%;
+}
+
+#button-div {
+    height: 80vh;
 }
