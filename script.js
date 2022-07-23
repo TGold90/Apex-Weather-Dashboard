@@ -41,17 +41,30 @@ function citySearch(){
         }).then(function(fulldata){
         console.log(fulldata)
 
-        //maybe put this in a separate function so i can eruse for card creation
+        //maybe put this in a separate function so i can reuse for card creation
+        let uvIndexNum = fulldata.current.uvi;
+        // console.log(uvIndexNum);
+
         cityText.text(data.name);
         console.log(data.name);
         temp.text("Temp: " + data.main.temp +"° F");
         wind.text("Wind: " + data.wind.speed + " mph");
-        humidity.text("Humidity: " + data.main.humidity + " %")
-        uvIndex.text("UV Index: " + fulldata.current.uvi);
+        humidity.text("Humidity: " + data.main.humidity + " %");
+        uvIndex.text("UV Index: " + uvIndexNum);
 
+        if (uvIndexNum >= 7){
+            uvIndex.addClass("severe");
+        } else if (uvIndexNum < 7 && uvIndex >= 3.5){
+            uvIndex.removeClass("severe");
+            uvIndex.addClass("moderate");
+        } else{
+            uvIndex.removeClass("moderate");
+            uvIndex.addClass("favorable");
+        }
         });
     });
 };
+
 
 //function to append city weather data to html
 

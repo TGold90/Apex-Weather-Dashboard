@@ -39,6 +39,7 @@ header {
 
 #city-data {
     height: 33vh;
+    padding: 10px;
 }
 
 #fiveday-header {
@@ -61,4 +62,19 @@ header {
 
 #button-div {
     height: 80vh;
+}
+
+.favorable {
+    background-color: green;
+    color: #fff;
+}
+
+.moderate {
+    background-color: yellow;
+    color: black;
+}
+
+.severe {
+    background-color: red;
+    color: black;
 }
