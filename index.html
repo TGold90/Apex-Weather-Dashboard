@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body class="vh-100">
-      <header class="d-flex flex-row justify-content-center bg-primary text-light height: 100px">
+      <header class="d-flex flex-row justify-content-center text-light height: 100px">
               <h1>Apex Weather Dashboard</h1>
       </header>
       <div class="container-fluid row" id="main-container">
           <div class="container-fluid row col-3" id="search-side">
             <div class="form-group col-12 my-1" id="search-form">
                 <h4>Search for a City:</h4>
-                <input type="text" name="search" id="cityInput" class="form-control" placeholder="Enter a city here..." aria-describedby="helpId">
-                <button class="btn btn-primary" id="search-btn">Search</button>
+                <input type="text" name="search" id="cityInput" class="form-control" placeholder="City, State Code, Country Code" aria-describedby="helpId">
+                <button class="btn text-light" id="search-btn">Search</button>
             </div>
             <div class="col-12 my-3" id="button-div">
                 <ul class="p-1"id="button-list">
@@ -43,13 +43,7 @@
                 <br>
                 <span id="uv">UV Index: </span>
               </div>
-                <!-- <ul class="weather-list border">
-                    <li class="list-unstyled" id="city-name">Salt lake City</li>
-                    <li class="list-unstyled" id="Temp">Salt lake City</li>
-                    <li class="list-unstyled" id="Wind">Salt lake City</li>
-                    <li class="list-unstyled" id="Humidity">Salt lake City</li>
-                    <li class="list-unstyled" id="UV Index">Salt lake City</li>
-                </ul> -->
+                
                 <h4 id="fiveday-header">5 Day Forecast:</h2>
                 <div class="row col-12 justify-content-between" id="forecast-div">
                   <!-- <h2>5 Day Forecast</h2> -->
@@ -98,6 +92,8 @@
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

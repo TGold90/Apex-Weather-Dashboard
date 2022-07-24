@@ -9,6 +9,7 @@ body {
 header {
     height: 100px;
     align-items: center;
+    background-image: linear-gradient(to right, rgb(3, 0, 90), rgb(88, 84, 126));
 }
 
 .row {
@@ -58,6 +59,7 @@ header {
 .btn {
     margin-top: .5em;
     width: 100%;
+    background-image: linear-gradient(to right, rgb(3, 0, 90), rgb(88, 84, 126));
 }
 
 #button-div {
