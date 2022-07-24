@@ -1,6 +1,6 @@
 
 var searchBtn = $("#search-btn");
-var cityInput = $("cityInput");
+var cityInput = $("#cityInput");
 var cityText = $("#citytext");
 var temp = $("#temp");
 var wind = $("#wind");
@@ -15,11 +15,22 @@ var location;
 // var state;
 // var country;
 var APIKey = "cb222b8fc6b876ca425d882c9612884c";
+var storedCity = JSON.parse(localStorage.getItem("storedCity")) || [];
 
 
 function citySearch(){
+    $("#forecast-div").empty();
+
+if ($(this).attr("id") === "search-btn"){
     city = $(this).siblings("input").val().trim();
-    cityInput.value = ""; //ask Eric
+    storedCity.push(city);
+    localStorage.setItem("storedCity", JSON.stringify(storedCity));
+    cityInput.val(""); 
+}   else {
+    city = $(this).text();
+}
+
+    
     console.log(city);
 
     // var getCity = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey +"&units=imperial";
@@ -69,6 +80,7 @@ function citySearch(){
         }
 
         renderFiveDay(fulldata.daily);
+        renderBtn();
 
         });
     });
@@ -100,16 +112,22 @@ function renderFiveDay(fiveDay){
         card.append(img, cardBody, cardTitle, temp, wind, humidity);
         $("#forecast-div").append(card);
     }
-    // <div class="card text-left">
-    //                 <img class="card-img-top" src="holder.js/100px180/" alt="">
-    //                 <div class="card-body">
-    //                   <h4 class="card-title">Title</h4>
-    //                   <p class="card-text">Body</p>
-    //                 </div>
+    
 }
-//function to append city weather data to html
 
+function renderBtn (){
+    $("#button-div").empty();
+    for (let i = 0; i < storedCity.length; i++){
+        var btn = $("<button>")
+        btn.addClass("btn text-light")
+        btn.text(storedCity[i]);
+        $("#button-div").append(btn);
+    }
+    
+}
 
+renderBtn()
+$("#button-div").on("click", "button", citySearch)
 searchBtn.click(citySearch)
 
 //function to save to local storage
