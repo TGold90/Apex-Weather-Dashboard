@@ -21,67 +21,37 @@
                 <input type="text" name="search" id="cityInput" class="form-control" placeholder="City, State Code, Country Code" aria-describedby="helpId">
                 <button class="btn text-light" id="search-btn">Search</button>
             </div>
+          
             <div class="col-12 my-3" id="button-div">
-                <ul class="p-1"id="button-list">
-
-                </ul>
+              <h4>Recent Searches:</h4>
+              <br>
+                
             </div>
           </div>
           <div class="container-fluid row col-9" id="weather-side">
             <div class="container-fluid col-12 vh-100">
-              <div class="container-fluid border" id="city-data">
-                <h3 id="citytext"></h3>
-                <br>
-                <span id="temp">Temp: </span>
-                <br>
-                <br>
-                <span id="wind">Wind: </span>
-                <br>
-                <br>
-                <span id="humidity">Humidity: </span>
-                <br>
-                <br>
-                <span id="uv">UV Index: </span>
+              <div class="container-fluid border row align-tems-center justify-content-center" id="city-data">
+                <div class="container col-6">
+                  <h3 id="citytext"></h3>
+                  <br>
+                  <span id="temp">Temp: </span>
+                  <br>
+                  <br>
+                  <span id="wind">Wind: </span>
+                  <br>
+                  <br>
+                  <span id="humidity">Humidity: </span>
+                  <br>
+                  <br>
+                  <span id="uv">UV Index: </span>
+                </div>
+                <div class="container col-6" id="cityIcon">
+                </div>
               </div>
                 
                 <h4 id="fiveday-header">5 Day Forecast:</h2>
                 <div class="row col-12 justify-content-between" id="forecast-div">
-                  <!-- <h2>5 Day Forecast</h2> -->
-                  <!-- <div class="card text-left">
-                    <img class="card-img-top" src="holder.js/100px180/" alt="">
-                    <div class="card-body">
-                      <h4 class="card-title">Title</h4>
-                      <p class="card-text">Body</p>
-                    </div>
-                  </div>
-                  <div class="card text-left">
-                    <img class="card-img-top" src="holder.js/100px180/" alt="">
-                    <div class="card-body">
-                      <h4 class="card-title">Title</h4>
-                      <p class="card-text">Body</p>
-                    </div>
-                  </div>
-                  <div class="card text-left">
-                    <img class="card-img-top" src="holder.js/100px180/" alt="">
-                    <div class="card-body">
-                      <h4 class="card-title">Title</h4>
-                      <p class="card-text">Body</p>
-                    </div>
-                  </div>
-                  <div class="card text-left">
-                    <img class="card-img-top" src="holder.js/100px180/" alt="">
-                    <div class="card-body">
-                      <h4 class="card-title">Title</h4>
-                      <p class="card-text">Body</p>
-                    </div>
-                  </div>
-                  <div class="card text-left">
-                    <img class="card-img-top" src="holder.js/100px180/" alt="">
-                    <div class="card-body">
-                      <h4 class="card-title">Title</h4>
-                      <p class="card-text">Body</p>
-                    </div>
-                  </div>  -->
+                  
                 </div>
             </div> 
           </div>
@@ -90,8 +60,7 @@
           
       
       
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

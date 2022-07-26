@@ -39,7 +39,7 @@ header {
 }
 
 #city-data {
-    height: 33vh;
+    /* height: 33vh; */
     padding: 10px;
 }
 
@@ -79,4 +79,13 @@ header {
 .severe {
     background-color: red;
     color: black;
+}
+
+.card {
+    /* width: 100%; */
+}
+
+.icon {
+    width:fit-content;
+    height: fit-content;
 }
