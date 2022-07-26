@@ -29,7 +29,7 @@ if ($(this).attr("id") === "search-btn"){
     city = $(this).text();
 }
 
-    var geoLoc = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&appid=" + APIKey;
+    var geoLoc = "https://api.openweathermap.org/geo/1.0/direct?q=" + city + "&appid=" + APIKey;
 
     fetch(geoLoc).then(function (response){
         return response.json()
