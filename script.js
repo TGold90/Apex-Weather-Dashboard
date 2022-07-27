@@ -19,6 +19,7 @@ var storedCity = JSON.parse(localStorage.getItem("storedCity")) || [];
 
 function citySearch(){
     $("#forecast-div").empty();
+    $("#cityIcon").empty();
 
 if ($(this).attr("id") === "search-btn"){
     city = $(this).siblings("input").val().trim();
