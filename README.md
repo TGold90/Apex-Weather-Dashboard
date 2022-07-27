@@ -12,8 +12,6 @@ Upon searching a city, that city name will be saved into client side storage as 
 
 ## Link and Screenshot
 
-https://tgold90.github.io/Schedule-It-CalenderApp/
+https://tgold90.github.io/Apex-Weather-Dashboard/
 
-
-
-![tgold90 github io_Schedule-It-CalenderApp_ (1)](https://user-images.githubusercontent.com/104692375/179891115-1984ab5c-f12f-48a0-a3c1-1a8df0f6a8d0.png)
+![127 0 0 1_5500_index html (1)](https://user-images.githubusercontent.com/104692375/181132469-325aee03-03e9-471e-bab1-16db98a86fb6.png)
