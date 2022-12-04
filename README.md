@@ -50,6 +50,8 @@ https://tgold90.github.io/Apex-Weather-Dashboard/
 
 Apex Weather Dashboard is a simple weather application that will show the current weather conditions for whichever city a user enters into the input bar. It also shows a 5 day forecast for the searched city and saves recent searches to local storage and generates a button to easily search again.
 
+Apex Weather Dashboard uses the Open Weather API.
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -58,6 +60,7 @@ Apex Weather Dashboard is a simple weather application that will show the curren
 - HTML
 - CSS
 - Bootstrap
+- Open Weather API <a href="https://openweathermap.org/api/one-call-3"><strong>Explore the docs »</strong></a>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
