@@ -12,7 +12,7 @@
 <br />
 <div align="center">
 <a href="https://github.com/TGold90/Apex-Weather-Dashboard">
-<img src="./client/src/assets/Jot it Down Logo.png" alt="Logo" width="100" height="100">
+
 </a>
 <p align="center">
 
